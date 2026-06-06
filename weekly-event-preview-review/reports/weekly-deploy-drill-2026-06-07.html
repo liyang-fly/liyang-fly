@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>部署演练：每周事件前瞻回顾 HTML 发布流程</title>
+  <style>
+    :root{
+      color-scheme: dark;
+      --bg:#0b1020; --card:#121a2e; --card2:#17213a; --text:#e8eefc;
+      --muted:#a9b7d0; --line:rgba(255,255,255,.13); --accent:#6ee7f9;
+      --ok:#34d399; --warn:#fbbf24;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;background:radial-gradient(circle at top left,#1b2a54 0,#0b1020 42%,#070a14 100%);color:var(--text);line-height:1.65}
+    .wrap{max-width:920px;margin:0 auto;padding:28px 16px 44px}
+    .hero{background:linear-gradient(135deg,rgba(110,231,249,.16),rgba(52,211,153,.09));border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 12px;border-radius:999px;background:rgba(251,191,36,.14);color:#fde68a;border:1px solid rgba(251,191,36,.35);font-weight:700;font-size:14px}
+    h1{font-size:clamp(28px,6vw,46px);line-height:1.15;margin:18px 0 10px}
+    h2{font-size:22px;margin:28px 0 12px}
+    p{margin:10px 0;color:var(--muted)}
+    a{color:var(--accent);word-break:break-all}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+    .card{background:rgba(18,26,46,.86);border:1px solid var(--line);border-radius:18px;padding:18px}
+    .label{font-size:13px;color:var(--muted);margin-bottom:6px}.value{font-weight:700;color:var(--text);word-break:break-word}
+    ol,ul{padding-left:22px}.notice{border-left:4px solid var(--warn);background:rgba(251,191,36,.08);padding:14px 16px;border-radius:14px;margin-top:18px;color:#fffbeb}
+    .success{border-left:4px solid var(--ok);background:rgba(52,211,153,.09);padding:14px 16px;border-radius:14px;margin-top:18px}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:680px){.wrap{padding:18px 12px 32px}.hero{padding:20px;border-radius:20px}.grid{grid-template-columns:1fr}.card{padding:16px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">部署演练 · 非投资报告</span>
+      <h1>每周事件前瞻回顾 HTML 发布流程演练</h1>
+      <p>本页面仅用于验证 GitHub Pages 静态 HTML 发布链路是否可用；不包含真实研究、投资建议或市场判断。</p>
+      <div class="notice"><strong>重要说明：</strong>这是“部署演练”测试页面，不是投资报告，请勿据此进行任何投资决策。</div>
+      <div class="grid" aria-label="部署信息">
+        <div class="card"><div class="label">演练时间</div><div class="value">2026-06-07（生成时间：2026-06-06 18:42:03 UTC）</div></div>
+        <div class="card"><div class="label">任务目录</div><div class="value">weekly-event-preview-review</div></div>
+        <div class="card"><div class="label">报告目录</div><div class="value">weekly-event-preview-review/reports</div></div>
+        <div class="card"><div class="label">目标公开 URL</div><div class="value"><a href="https://liyang-fly.github.io/liyang-fly/weekly-event-preview-review/reports/weekly-deploy-drill-2026-06-07.html">https://liyang-fly.github.io/liyang-fly/weekly-event-preview-review/reports/weekly-deploy-drill-2026-06-07.html</a></div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>演练目录</h2>
+      <ol>
+        <li>确认本地仓库与 GitHub 远程配置。</li>
+        <li>在工作区干净时同步 master 分支。</li>
+        <li>生成移动端友好的测试 HTML 页面。</li>
+        <li>更新任务首页报告列表，加入本演练链接。</li>
+        <li>提交并推送到 GitHub Pages 仓库。</li>
+        <li>访问公开 URL，检查 HTTP 状态与页面关键文本。</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>成功判定</h2>
+      <ul>
+        <li>公开 URL 返回 HTTP 200。</li>
+        <li>页面标题包含“部署演练”。</li>
+        <li>正文包含“非投资报告”“目标公开 URL”“成功判定”等关键文本。</li>
+        <li>任务首页能够链接到本演练页面。</li>
+      </ul>
+      <div class="success"><strong>预期结果：</strong>若以上检查全部通过，则本次 GitHub Pages HTML 部署演练成功。</div>
+    </section>
+
+    <footer>GitHub Pages 部署演练页面 · 2026-06-07</footer>
+  </main>
+</body>
+</html>
