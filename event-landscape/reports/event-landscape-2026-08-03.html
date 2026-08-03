@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>事件全景报告 — 2026-08-03</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #1a1a2e; color: #e0e0e0;
+  font-family: -apple-system, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  max-width: 960px; margin: 0 auto; padding: 20px; line-height: 1.7;
+}
+h1 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 12px; font-size: 1.8em; }
+h2 { color: #ffd700; margin-top: 36px; font-size: 1.4em; }
+h3 { color: #ff6b6b; margin-top: 24px; font-size: 1.15em; }
+.section { background: #16213e; border-radius: 10px; padding: 24px; margin: 20px 0; }
+.event-card { background: #1a1a3e; border-left: 4px solid #00d4ff; padding: 16px; margin: 12px 0; border-radius: 0 8px 8px 0; }
+.event-card.policy { border-left-color: #ffd700; }
+.event-card.tech { border-left-color: #4CAF50; }
+.event-card.geopolitics { border-left-color: #ff6b6b; }
+.event-card.society { border-left-color: #9C27B0; }
+.event-card.market { border-left-color: #FF9800; }
+.event-card .event-date { color: #888; font-size: 0.85em; margin-bottom: 4px; }
+.event-card .event-title { font-weight: bold; font-size: 1.05em; margin-bottom: 6px; }
+.event-card .event-impact { color: #aaa; font-size: 0.9em; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+th { background: #0f3460; color: #00d4ff; padding: 12px 10px; text-align: left; font-weight: 600; }
+td { padding: 10px; border-bottom: 1px solid #0f3460; vertical-align: top; }
+tr:hover td { background: rgba(0,212,255,0.05); }
+.risk-high { color: #ff4444; font-weight: bold; }
+.risk-mid { color: #ffaa00; }
+.risk-low { color: #4CAF50; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 2px; }
+.tag-policy { background: rgba(255,215,0,0.2); color: #ffd700; }
+.tag-tech { background: rgba(76,175,80,0.2); color: #4CAF50; }
+.tag-geo { background: rgba(255,107,107,0.2); color: #ff6b6b; }
+.tag-society { background: rgba(156,39,176,0.2); color: #CE93D8; }
+.tag-market { background: rgba(255,152,0,0.2); color: #FF9800; }
+.footer { text-align: center; color: #666; margin-top: 48px; font-size: 12px; border-top: 1px solid #333; padding-top: 20px; }
+.tracking-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+.tracking-table th { background: #1a1a4e; color: #00d4ff; padding: 10px 8px; text-align: left; font-size: 13px; }
+.tracking-table td { padding: 10px 8px; border-bottom: 1px solid #0f3460; vertical-align: top; font-size: 13px; }
+.tracking-table .col-time { width: 80px; white-space: nowrap; }
+.tracking-table .col-event { width: 18%; }
+.tracking-table .col-expected { width: 20%; }
+.tracking-table .col-actual { width: 25%; }
+.tracking-table .col-deviation { width: 20%; }
+.deviation-over { color: #ff6b6b; font-weight: bold; }
+.deviation-match { color: #4CAF50; }
+.deviation-under { color: #ffaa00; }
+.tracking-empty { color: #888; text-align: center; padding: 24px; font-style: italic; }
+.month-section { margin: 24px 0; }
+.month-title { color: #00d4ff; font-size: 1.1em; font-weight: bold; margin-bottom: 8px; }
+.timeline-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; }
+.timeline-dot.major { background: #ff6b6b; }
+.timeline-dot.normal { background: #ffd700; }
+@media (max-width: 768px) {
+  body { padding: 12px; font-size: 15px; }
+  h1 { font-size: 1.4em; }
+  .section { padding: 16px; margin: 12px 0; }
+  table { font-size: 12px; }
+  th, td { padding: 8px 6px; }
+  .event-card { padding: 12px; }
+}
+</style>
+</head>
+<body>
+
+<h1>📊 事件全景报告</h1>
+<p style="color:#888;margin-bottom:24px;">报告周期：2026-07-04 ~ 2026-08-03 | 生成时间：2026-08-03 23:50 CST</p>
+
+<!-- ====== SECTION 1.5: 影响追踪 ====== -->
+<div class="section">
+  <h2>📊 过去两周重大事件影响追踪</h2>
+  <p style="color:#888;font-size:13px;margin-bottom:16px;">
+    追踪 7-14 天前（2026-07-20 ~ 07-27）重大事件的实际影响，对比当时预期，分析偏离原因。
+  </p>
+
+  <table class="tracking-table">
+    <thead>
+      <tr>
+        <th class="col-time">时间</th>
+        <th class="col-event">原始事件</th>
+        <th class="col-expected">当时预期</th>
+        <th class="col-actual">实际发展</th>
+        <th class="col-deviation">偏离分析</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>07-22</td>
+        <td><strong>美国贸易代表预告新关税政策</strong></td>
+        <td>预期对中国部分商品加征关税，范围有限</td>
+        <td>① 7/28 特朗普威胁对欧盟加征报复性关税（301调查）<br>② 7/30 对购买俄油气国家征收100%二级关税<br>③ 8/3 制裁洽洽食品、思念食品、七匹狼等中国企业</td>
+        <td><span class="deviation-over">⚠️ 超预期</span><br>关税范围远超预期：从中国扩展至欧盟、俄油买家，且制裁延伸至消费品领域</td>
+      </tr>
+      <tr>
+        <td>07-24</td>
+        <td><strong>AI烧钱担忧+中东局势，纳斯达克跌1.2%，存储芯片重挫6%</strong></td>
+        <td>预期科技股短期承压，芯片板块持续调整</td>
+        <td>① 8/3 亚马逊市值突破3万亿美元创新高<br>② 微软、谷歌、Meta均涨超5%<br>③ 韩国NAND产品7月均价环比涨35%创历史新高<br>④ 中微公司上半年净利润增282%-311%</td>
+        <td><span class="deviation-over">⚠️ 超预期反弹</span><br>云厂商AI需求强劲超预期，存储芯片价格创新高，但A股半导体板块8/3仍回调</td>
+      </tr>
+      <tr>
+        <td>07-27</td>
+        <td><strong>沃什想借"五大工作组"降息和改革美联储</strong></td>
+        <td>高盛预警改革难度大，降息希望渺茫</td>
+        <td>① 7/30 美联储按兵不动，遭3张加息反对票<br>② 7/30 特朗普力挺沃什，矛头直指美联储理事会<br>③ 降息希望落空，债市押注超长债</td>
+        <td><span class="deviation-match">✅ 符合预期</span><br>高盛预判准确，美联储内部鹰派力量超预期（3票主张加息），改革阻力大</td>
+      </tr>
+      <tr>
+        <td>07-22</td>
+        <td><strong>日元跌破163关口，创近40年新低</strong></td>
+        <td>预期日本央行加息至1%后日元企稳</td>
+        <td>① 日元持续承压，加息效果有限<br>② 格林斯潘"难题"重现：加息未带动长端利率下行<br>③ 全球套息交易继续压制日元</td>
+        <td><span class="deviation-under">📉 不及预期</span><br>日本央行加息至1%未能阻止日元贬值，套息交易压力超预期</td>
+      </tr>
+      <tr>
+        <td>07-23</td>
+        <td><strong>政策利好+AI算力双轮驱动，电力板块涨停潮</strong></td>
+        <td>预期短期炒作，持续性存疑</td>
+        <td>① 8/3 发改委能源局印发《新型电力系统建设"十五五"规划》<br>② 核电概念股继续走强，久盛电气20CM涨停<br>③ 装机量料十年翻倍</td>
+        <td><span class="deviation-over">⚠️ 超预期</span><br>政策落地速度超预期，从概念炒作升级为有实质规划支撑的产业主线</td>
+      </tr>
+      <tr>
+        <td>07-21</td>
+        <td><strong>英媒爆料：中美正计划9月举行AI会谈</strong></td>
+        <td>预期中美AI对话缓和科技竞争</td>
+        <td>① 7/24 外交部回应中美元首将讨论AI议题<br>② 8/3 集成电路布图设计保护条例修订（李强签署）<br>③ 中美在关键矿产上相互制约</td>
+        <td><span class="deviation-match">✅ 符合预期</span><br>AI对话持续推进，但双方在矿产、芯片等领域的竞争格局未变</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ====== SECTION 1: 过去30天关键事件回顾 ====== -->
+<div class="section">
+  <h2>📅 过去30天关键事件回顾（07-04 ~ 08-03）</h2>
+
+  <h3>🌍 国际地缘政治</h3>
+
+  <div class="event-card geopolitics">
+    <div class="event-date">2026-07-22 ~ 08-03</div>
+    <div class="event-title">🇺🇸 美国新一轮关税与制裁全面升级</div>
+    <div class="event-impact">
+      <strong>事件链：</strong>7/22 美国贸易代表预告新关税政策 → 7/28 特朗普威胁对欧盟加征报复性关税（301调查）→ 7/30 对购买俄油气国家征收100%二级关税 → 8/3 制裁洽洽食品、思念食品、七匹狼等中国企业<br>
+      <strong>影响评估：</strong><span class="risk-high">高</span> — 关税范围从中国扩展至欧盟、俄罗斯关联方，消费品领域首次大规模受限，全球贸易摩擦全面升温。韩国LG对中国电池企业提起337调查，贸易战从关税向知识产权延伸。<br>
+      <span class="tag tag-geo">地缘</span><span class="tag tag-market">贸易</span><span class="tag tag-policy">制裁</span>
+    </div>
+  </div>
+
+  <div class="event-card geopolitics">
+    <div class="event-date">2026-07-20 ~ 08-03</div>
+    <div class="event-title">🔥 中东局势持续紧张，油价波动加剧</div>
+    <div class="event-impact">
+      <strong>事件链：</strong>7/20 中东局势扑朔迷离，油价过山车 → 7/28 也门政府警告胡塞武装或控制曼德海峡 → 7/28 乌克兰对伊朗商船出手，战火恐延烧至里海 → 7/30 特朗普威胁袭击伊朗<br>
+      <strong>影响评估：</strong><span class="risk-high">高</span> — 中东冲突向多条战线扩散（曼德海峡、里海），伊朗面临军事打击威胁，全球能源供应链风险上升。迪拜旅游业受重创。<br>
+      <span class="tag tag-geo">地缘</span><span class="tag tag-market">能源</span>
+    </div>
+  </div>
+
+  <h3>💰 货币政策与宏观经济</h3>
+
+  <div class="event-card policy">
+    <div class="event-date">2026-07-30</div>
+    <div class="event-title">🏦 美联储按兵不动，但3票主张加息25bp</div>
+    <div class="event-impact">
+      <strong>核心要点：</strong>美联储维持利率不变，但遭3张反对票主张加息25个基点。纽约联储主席威廉姆斯8/3表示若通胀未回落将果断加息。沃什降息改革希望落空。<br>
+      <strong>影响评估：</strong><span class="risk-high">高</span> — 美联储内部分裂加剧，鹰派力量超预期。全球降息预期降温，债市押注超长债结构性行情。中国央行Q2例会维持"适度宽松"基调。<br>
+      <span class="tag tag-policy">货币政策</span><span class="tag tag-market">全球市场</span>
+    </div>
+  </div>
+
+  <div class="event-card policy">
+    <div class="event-date">2026-07-22</div>
+    <div class="event-title">💴 日元跌破163关口，创近40年新低</div>
+    <div class="event-impact">
+      <strong>背景：</strong>日本央行已加息至1%，但日元仍持续贬值。格林斯潘"难题"重现：加息未能带动长端利率下行。全球套息交易持续压制日元。<br>
+      <strong>影响评估：</strong><span class="risk-mid">中</span> — 亚洲汇率市场波动加剧，韩国股市7/7熔断后持续承压，外资流出压力增大。<br>
+      <span class="tag tag-policy">汇率</span><span class="tag tag-market">亚洲市场</span>
+    </div>
+  </div>
+
+  <h3>🤖 AI与科技产业</h3>
+
+  <div class="event-card tech">
+    <div class="event-date">2026-08-03</div>
+    <div class="event-title">☁️ 云厂商集体爆发：亚马逊市值突破3万亿美元</div>
+    <div class="event-impact">
+      <strong>数据：</strong>亚马逊盘初涨超4%市值突破3万亿，AWS云业务营收增速创18个季度新高。微软、谷歌、Meta均涨超5%。公司上调2026全年资本开支指引，AI算力供不应求趋势持续。<br>
+      <strong>影响评估：</strong><span class="risk-high">高</span> — 市场从"AI烧钱担忧"转向"AI需求验证"，云厂商资本开支扩张利好算力产业链。但7月存储芯片重挫后分化明显：美股反弹，A股半导体仍承压。<br>
+      <span class="tag tag-tech">AI</span><span class="tag tag-market">云计算</span><span class="tag tag-tech">芯片</span>
+    </div>
+  </div>
+
+  <div class="event-card tech">
+    <div class="event-date">2026-08-03</div>
+    <div class="event-title">🤖 谷歌DeepMind发布通用AI"大脑" + DeepSeek成本全球最低</div>
+    <div class="event-impact">
+      <strong>谷歌：</strong>Gemini Robotics 2系列套件，跨机型快速适配，剑指"机器人界的安卓"。<br>
+      <strong>DeepSeek：</strong>V4-Flash运行成本仅为Claude Fable 5的1/100，全球最低。<br>
+      <strong>影响评估：</strong><span class="risk-mid">中</span> — AI竞争从模型能力转向成本效率和场景落地，中国AI在成本端具备优势。Work Agent赛道崛起（23款产品竞争），阿里千问办公公测。<br>
+      <span class="tag tag-tech">AI</span><span class="tag tag-tech">机器人</span>
+    </div>
+  </div>
+
+  <div class="event-card tech">
+    <div class="event-date">2026-08-03</div>
+    <div class="event-title">📜 李强签署《集成电路布图设计保护条例》修订版</div>
+    <div class="event-impact">
+      <strong>内容：</strong>自2026年10月15日起施行，旨在保护集成电路布图设计专有权，鼓励技术创新。<br>
+      <strong>影响评估：</strong><span class="risk-mid">中</span> — 中美科技竞争背景下，中国加强芯片知识产权保护，为国产替代提供法律基础。中微公司半年报净利增282%-311%印证国产设备放量。<br>
+      <span class="tag tag-tech">芯片</span><span class="tag tag-policy">政策</span>
+    </div>
+  </div>
+
+  <h3>🏭 产业与经济</h3>
+
+  <div class="event-card policy">
+    <div class="event-date">2026-08-03</div>
+    <div class="event-title">⚡ 两部门印发《新型电力系统建设"十五五"规划》</div>
+    <div class="event-impact">
+      <strong>核心目标：</strong>到2030年非化石能源发电量占比达50%，实现28亿千瓦装机。绿色低碳电力供给格局基本形成。<br>
+      <strong>影响评估：</strong><span class="risk-high">高</span> — 核电、风电、光伏、电网设备全产业链受益。久盛电气20CM涨停，中国核建涨停。多晶硅期货涨停。政策确定性大幅提升。<br>
+      <span class="tag tag-policy">产业政策</span><span class="tag tag-tech">新能源</span>
+    </div>
+  </div>
+
+  <div class="event-card market">
+    <div class="event-date">2026-08-03</div>
+    <div class="event-title">📈 A股成交额超两万亿，半导体回调，新能源走强</div>
+    <div class="event-impact">
+      <strong>行情：</strong>沪指跌0.59%，深成指跌0.96%，创业板指跌1.24%。风电、电网设备、航天装备、光伏、稀土板块涨幅居前，电子化学品、半导体跌幅居前。<br>
+      <strong>影响评估：</strong><span class="risk-mid">中</span> — 市场风格切换明显，从半导体转向新能源电力。成交额维持高位显示资金活跃。券商8月金股从AI转向大消费。<br>
+      <span class="tag tag-market">A股</span><span class="tag tag-market">市场风格</span>
+    </div>
+  </div>
+
+  <div class="event-card society">
+    <div class="event-date">2026-07-22</div>
+    <div class="event-title">🎓 人社部：对困难毕业生就业一帮到底</div>
+    <div class="event-impact">
+      <strong>政策：</strong>全国就业公共服务地图发布，未来5年城镇新增就业保持相当规模。对困难毕业生实施兜底帮扶。<br>
+      <strong>影响评估：</strong><span class="risk-low">低</span> — 就业优先政策持续，但青年就业压力仍是长期挑战。<br>
+      <span class="tag tag-society">就业</span><span class="tag tag-policy">民生</span>
+    </div>
+  </div>
+</div>
+
+<!-- ====== SECTION 2: 未来30天预览 ====== -->
+<div class="section">
+  <h2>🗓️ 未来30天重点事件预览（08-04 ~ 09-02）</h2>
+
+  <table>
+    <thead>
+      <tr><th>时间</th><th>事件</th><th>影响领域</th><th>情景分析</th><th style="width:50px">关注度</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08-07~12</td>
+        <td><strong>中国7月CPI/PPI数据</strong></td>
+        <td>宏观经济<br>货币政策</td>
+        <td>
+          <strong>超预期：</strong>CPI回升，PPI降幅收窄 → 消费复苏信心增强，A股消费板块受益<br>
+          <strong>符合预期：</strong>CPI温和，PPI低位 → 政策维持宽松，降准降息预期升温<br>
+          <strong>不及预期：</strong>通缩压力加大 → 市场对刺激政策期待升高，债市走强
+        </td>
+        <td>🔥🔥🔥</td>
+      </tr>
+      <tr>
+        <td>08-10~15</td>
+        <td><strong>中国7月社融/信贷数据</strong></td>
+        <td>金融<br>房地产</td>
+        <td>
+          <strong>超预期：</strong>社融大幅回升 → 经济企稳信号，银行地产受益<br>
+          <strong>符合预期：</strong>社融温和增长 → 政策维持现状<br>
+          <strong>不及预期：</strong>社融继续走弱 → 降准降息预期升温
+        </td>
+        <td>🔥🔥🔥</td>
+      </tr>
+      <tr>
+        <td>08-20</td>
+        <td><strong>中国8月LPR报价</strong></td>
+        <td>货币政策<br>房地产</td>
+        <td>
+          <strong>超预期：</strong>下调LPR → 房贷利率创新低，地产链受益<br>
+          <strong>符合预期：</strong>维持不变 → 货币政策观望<br>
+          <strong>不及预期：</strong>上调LPR → 极低概率，但若发生则冲击地产
+        </td>
+        <td>🔥🔥</td>
+      </tr>
+      <tr>
+        <td>08-中旬</td>
+        <td><strong>A股半年报密集披露期</strong></td>
+        <td>股市<br>各行业</td>
+        <td>
+          <strong>超预期：</strong>AI/新能源业绩超预期 → 相关板块反弹<br>
+          <strong>符合预期：</strong>分化格局延续 → 个股行情<br>
+          <strong>不及预期：</strong>大面积不达预期 → 市场调整压力
+        </td>
+        <td>🔥🔥🔥</td>
+      </tr>
+      <tr>
+        <td>08-下旬</td>
+        <td><strong>美国7月PCE通胀数据</strong></td>
+        <td>美联储政策<br>全球市场</td>
+        <td>
+          <strong>超预期：</strong>PCE下行 → 美联储加息压力缓解，全球风险资产受益<br>
+          <strong>符合预期：</strong>PCE温和 → 9月FOMC维持利率不变预期<br>
+          <strong>不及预期：</strong>PCE反弹 → 加息预期升温，美股承压
+        </td>
+        <td>🔥🔥🔥</td>
+      </tr>
+      <tr>
+        <td>08-04起</td>
+        <td><strong>美国对中国企业新一轮制裁生效</strong></td>
+        <td>贸易<br>消费</td>
+        <td>
+          <strong>超预期：</strong>制裁范围继续扩大 → 出口企业承压，内需政策加码<br>
+          <strong>符合预期：</strong>影响有限 → 企业已提前调整供应链<br>
+          <strong>不及预期：</strong>中方反制升级 → 贸易战进一步升级
+        </td>
+        <td>🔥🔥</td>
+      </tr>
+      <tr>
+        <td>08-下旬</td>
+        <td><strong>中美9月AI会谈筹备进展</strong></td>
+        <td>科技<br>地缘</td>
+        <td>
+          <strong>超预期：</strong>双方释放积极信号 → AI/芯片板块受益<br>
+          <strong>符合预期：</strong>各说各话 → 维持现状<br>
+          <strong>不及预期：</strong>会谈取消或推迟 → 科技脱钩担忧加剧
+        </td>
+        <td>🔥🔥</td>
+      </tr>
+      <tr>
+        <td>08-持续</td>
+        <td><strong>中东局势演变</strong></td>
+        <td>能源<br>地缘</td>
+        <td>
+          <strong>超预期：</strong>冲突升级（伊朗遭打击）→ 油价暴涨，全球通胀风险<br>
+          <strong>符合预期：</strong>对峙持续 → 油价高位震荡<br>
+          <strong>不及预期：</strong>局势缓和 → 油价回落，避险情绪降温
+        </td>
+        <td>🔥🔥🔥</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ====== SECTION 3: 未来6个月日历 ====== -->
+<div class="section">
+  <h2>🔮 未来6个月事件日历（08-2026 ~ 01-2027）</h2>
+
+  <div class="month-section">
+    <div class="month-title"><span class="timeline-dot major"></span> 2026年8月</div>
+    <table>
+      <tr><td style="width:100px">08-07~12</td><td>中国7月CPI/PPI</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>08-10~15</td><td>中国7月社融/信贷</td><td><span class="tag tag-policy">金融</span></td></tr>
+      <tr><td>08-中旬</td><td>7月工业增加值/零售/固投</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>08-20</td><td>8月LPR报价</td><td><span class="tag tag-policy">货币</span></td></tr>
+      <tr><td>08-下旬</td><td>美国7月PCE通胀</td><td><span class="tag tag-market">美联储</span></td></tr>
+      <tr><td>08-下旬</td><td>A股半年报披露截止</td><td><span class="tag tag-market">A股</span></td></tr>
+      <tr><td>08-持续</td><td>中美9月AI会谈筹备</td><td><span class="tag tag-geo">地缘</span></td></tr>
+    </table>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title"><span class="timeline-dot major"></span> 2026年9月</div>
+    <table>
+      <tr><td style="width:100px">09-09~12</td><td>中国8月CPI/PPI</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>09-15~16</td><td><strong>FOMC议息会议</strong></td><td><span class="tag tag-market">美联储</span></td></tr>
+      <tr><td>09-中旬</td><td>8月社融/经济数据</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>09-20</td><td>9月LPR报价</td><td><span class="tag tag-policy">货币</span></td></tr>
+      <tr><td>09-待定</td><td><strong>中美AI会谈</strong></td><td><span class="tag tag-geo">科技</span></td></tr>
+      <tr><td>09-待定</td><td>IFA柏林消费电子展</td><td><span class="tag tag-tech">科技</span></td></tr>
+    </table>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title"><span class="timeline-dot normal"></span> 2026年10月</div>
+    <table>
+      <tr><td style="width:100px">10-中旬</td><td>中国Q3 GDP / 9月经济数据</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>10-15</td><td>集成电路布图设计保护条例生效</td><td><span class="tag tag-tech">芯片</span></td></tr>
+      <tr><td>10-20</td><td>10月LPR报价</td><td><span class="tag tag-policy">货币</span></td></tr>
+      <tr><td>10-27~28</td><td><strong>FOMC议息会议</strong></td><td><span class="tag tag-market">美联储</span></td></tr>
+      <tr><td>10-待定</td><td>CPC中央委员会全体会议</td><td><span class="tag tag-policy">政策</span></td></tr>
+      <tr><td>10-31</td><td>A股三季报披露截止</td><td><span class="tag tag-market">A股</span></td></tr>
+    </table>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title"><span class="timeline-dot normal"></span> 2026年11月</div>
+    <table>
+      <tr><td style="width:100px">11-11</td><td>双十一消费数据</td><td><span class="tag tag-market">消费</span></td></tr>
+      <tr><td>11-中旬</td><td>10月CPI/社融/经济数据</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>11-20</td><td>11月LPR报价</td><td><span class="tag tag-policy">货币</span></td></tr>
+      <tr><td>11-待定</td><td>美国中期选举后续政策落地</td><td><span class="tag tag-geo">地缘</span></td></tr>
+    </table>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title"><span class="timeline-dot major"></span> 2026年12月</div>
+    <table>
+      <tr><td style="width:100px">12-08~09</td><td><strong>FOMC议息会议</strong>（年度最后一次）</td><td><span class="tag tag-market">美联储</span></td></tr>
+      <tr><td>12-中旬</td><td><strong>中央经济工作会议</strong></td><td><span class="tag tag-policy">政策</span></td></tr>
+      <tr><td>12-中旬</td><td>11月CPI/社融/经济数据</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>12-20</td><td>12月LPR报价</td><td><span class="tag tag-policy">货币</span></td></tr>
+    </table>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title"><span class="timeline-dot normal"></span> 2027年1月</div>
+    <table>
+      <tr><td style="width:100px">01-中旬</td><td>中国2026全年GDP / 12月经济数据</td><td><span class="tag tag-policy">宏观</span></td></tr>
+      <tr><td>01-待定</td><td>CES拉斯维加斯消费电子展</td><td><span class="tag tag-tech">科技</span></td></tr>
+      <tr><td>01-下旬</td><td>A股年报预告密集披露</td><td><span class="tag tag-market">A股</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ====== SECTION 4: 综合研判 ====== -->
+<div class="section">
+  <h2>💡 综合研判</h2>
+
+  <h3>🔗 跨事件主题分析</h3>
+  <p><strong>1. 全球贸易摩擦进入"全面升级"阶段</strong></p>
+  <p>美国关税从中国扩展至欧盟、俄罗斯关联方，从工业品延伸至消费品（洽洽、思念）。韩国LG对中国电池企业提起337调查，贸易战从关税向知识产权全面扩散。这是近5年来最广泛的贸易保护主义升级。</p>
+
+  <p><strong>2. AI从"烧钱叙事"转向"需求验证"</strong></p>
+  <p>亚马逊AWS增速创18季新高、云厂商资本开支上调、存储芯片价格创新高，三重信号确认AI需求真实且强劲。但A股与美股半导体分化明显，反映中美科技产业链的脱钩加深。</p>
+
+  <p><strong>3. 美联储内部分裂 + 全球汇率压力</strong></p>
+  <p>3票加息反对票史无前例，美联储公信力受损。日元贬至40年低点，韩国股市7月熔断，亚洲汇率市场脆弱性暴露。中国央行"适度宽松"基调与全球紧缩形成政策分化。</p>
+
+  <p><strong>4. 中国产业政策加速落地</strong></p>
+  <p>新型电力系统"十五五"规划、集成电路保护条例修订，政策从"方向指引"转向"具体落地"。新能源电力产业链确定性大幅提升。</p>
+
+  <h3>⚠️ 关键风险点</h3>
+  <table>
+    <tr><th style="width:180px">风险</th><th>严重度</th><th>触发条件</th></tr>
+    <tr>
+      <td>美国关税全面升级</td>
+      <td><span class="risk-high">🔴 高</span></td>
+      <td>8/3制裁已生效，若中国反制则进一步升级</td>
+    </tr>
+    <tr>
+      <td>中东冲突扩大</td>
+      <td><span class="risk-high">🔴 高</span></td>
+      <td>伊朗遭军事打击，曼德海峡封锁，油价暴涨</td>
+    </tr>
+    <tr>
+      <td>美联储意外加息</td>
+      <td><span class="risk-mid">🟡 中</span></td>
+      <td>7月PCE数据反弹，9月FOMC加息概率上升</td>
+    </tr>
+    <tr>
+      <td>A股半年报不及预期</td>
+      <td><span class="risk-mid">🟡 中</span></td>
+      <td>AI/新能源业绩不达预期，市场风格切换后无接力</td>
+    </tr>
+    <tr>
+      <td>中美AI会谈破裂</td>
+      <td><span class="risk-mid">🟡 中</span></td>
+      <td>会谈取消或无实质成果，科技脱钩加速</td>
+    </tr>
+  </table>
+
+  <h3>📌 重点关注</h3>
+  <p>① <strong>8月7-15日中国7月CPI/社融数据</strong> — 决定下半年政策力度和市场方向</p>
+  <p>② <strong>8月下旬美国PCE数据</strong> — 决定9月FOMC加息概率</p>
+  <p>③ <strong>A股半年报</strong> — 验证AI和新能源产业链真实业绩</p>
+  <p>④ <strong>中美9月AI会谈筹备进展</strong> — 科技竞争格局关键信号</p>
+  <p>⑤ <strong>中东局势</strong> — 能源价格的不确定性来源</p>
+</div>
+
+<div class="footer">
+  <p>⚠️ 免责声明：本报告基于公开信息整理，不构成任何投资建议。</p>
+  <p>数据来源：TrendRadar News MCP、东方财富快讯 | 生成时间：2026-08-03 23:50 CST</p>
+</div>
+
+</body>
+</html>
