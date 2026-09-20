@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>事件全景周报（2026-09-20，周日）</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #1a1a2e; color: #e0e0e0;
+  font-family: -apple-system, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  max-width: 960px; margin: 0 auto; padding: 20px; line-height: 1.7;
+}
+h1 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 12px; font-size: 1.8em; }
+h2 { color: #ffd700; margin-top: 36px; font-size: 1.4em; }
+h3 { color: #ff6b6b; margin-top: 24px; font-size: 1.15em; }
+.section { background: #16213e; border-radius: 10px; padding: 24px; margin: 20px 0; }
+.event-card { background: #1a1a3e; border-left: 4px solid #00d4ff; padding: 16px; margin: 12px 0; border-radius: 0 8px 8px 0; }
+.event-card.policy { border-left-color: #ffd700; }
+.event-card.tech { border-left-color: #4CAF50; }
+.event-card.geopolitics { border-left-color: #ff6b6b; }
+.event-card.society { border-left-color: #9C27B0; }
+.event-card.market { border-left-color: #FF9800; }
+.event-card .event-date { color: #888; font-size: 0.85em; margin-bottom: 4px; }
+.event-card .event-title { font-weight: bold; font-size: 1.05em; margin-bottom: 6px; }
+.event-card .event-detail { color: #ccc; font-size: 0.92em; margin: 4px 0; }
+.event-card .event-impact { color: #aaa; font-size: 0.9em; margin-top: 6px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+th { background: #0f3460; color: #00d4ff; padding: 12px 10px; text-align: left; font-weight: 600; }
+td { padding: 10px; border-bottom: 1px solid #0f3460; vertical-align: top; }
+tr:hover td { background: rgba(0,212,255,0.05); }
+.risk-high { color: #ff4444; font-weight: bold; }
+.risk-mid { color: #ffaa00; }
+.risk-low { color: #4CAF50; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 2px; }
+.tag-policy { background: rgba(255,215,0,0.2); color: #ffd700; }
+.tag-tech { background: rgba(76,175,80,0.2); color: #4CAF50; }
+.tag-geo { background: rgba(255,107,107,0.2); color: #ff6b6b; }
+.tag-society { background: rgba(156,39,176,0.2); color: #CE93D8; }
+.tag-market { background: rgba(255,152,0,0.2); color: #FF9800; }
+.footer { text-align: center; color: #666; margin-top: 48px; font-size: 12px; border-top: 1px solid #333; padding-top: 20px; }
+.tracking-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+.tracking-table th { background: #1a1a4e; color: #00d4ff; padding: 10px 8px; text-align: left; font-size: 13px; }
+.tracking-table td { padding: 10px 8px; border-bottom: 1px solid #0f3460; vertical-align: top; font-size: 13px; }
+.tracking-table .col-time { width: 70px; white-space: nowrap; }
+.tracking-table .col-event { width: 17%; }
+.tracking-table .col-expected { width: 20%; }
+.tracking-table .col-actual { width: 26%; }
+.tracking-table .col-deviation { width: 19%; }
+.deviation-over { color: #ff6b6b; font-weight: bold; }
+.deviation-match { color: #4CAF50; }
+.deviation-under { color: #ffaa00; }
+.tracking-empty { color: #888; text-align: center; padding: 24px; font-style: italic; }
+.month-section { margin: 18px 0; }
+.month-title { color: #00d4ff; font-size: 1.1em; font-weight: bold; margin-bottom: 8px; }
+.cal-item { padding: 8px 0 8px 20px; border-left: 2px solid #0f3460; margin-left: 6px; }
+.cal-item .cal-date { color: #ffd700; font-weight: bold; }
+.overview { background: #0f3460; border-radius: 8px; padding: 16px 20px; margin: 16px 0; color: #e0e0e0; font-size: 0.95em; border-left: 4px solid #ffd700; }
+@media (max-width: 768px) {
+  body { padding: 12px; font-size: 15px; }
+  h1 { font-size: 1.4em; }
+  .section { padding: 16px; margin: 12px 0; }
+  table { font-size: 12px; }
+  th, td { padding: 8px 6px; }
+  .event-card { padding: 12px; }
+  .tracking-table { font-size: 11px; }
+}
+</style>
+</head>
+<body>
+<h1>📡 事件全景周报</h1>
+<p style="color:#888;margin-bottom:8px;">过去7天（09-14 ~ 09-20）回顾 + 过去两周影响追踪 + 未来7天（09-21 ~ 09-27）预览 + 未来6个月事件日历</p>
+<p style="color:#666;font-size:12px;">数据来源：TrendRadar MCP 全平台聚合 + 东方财富全球财经快讯（焦点）+ 公开事件日历 ｜ 生成：Hermes Agent ｜ 日期：2026-09-20（周日）</p>
+
+<div class="overview">
+  <strong>🔍 一句话概览：</strong> 本周全球正式进入<b>「紧缩周期」</b>——美联储时隔3年多重启加息25bp、日本央行以1990年以来最快速度升息，美欧日三大央行同步收紧。但市场迅速「利空出尽」：A股、美股芯片板块于9月18日反弹，资金重回科技。中东方面，沙特能源危机延续（胡塞武装再袭延布），但伊朗向美递出停战条件，油价冲高回落。中美降税磋商持续推进，人民币升破6.7关口。国内，住建部宣告「房地产进入存量时代」、现房销售成为大势所趋。
+</div>
+
+<!-- ============ 1.5 影响追踪 ============ -->
+<div class="section">
+  <h2>📊 过去两周重大事件影响追踪</h2>
+  <p style="color:#888;font-size:13px;margin-bottom:16px;">
+    追踪 7-14 天前（9月上旬）出现在上一期报告中的重大事件，对比当时预期与实际发展，分析偏离原因。
+  </p>
+  <table class="tracking-table">
+    <thead>
+      <tr>
+        <th class="col-time">时间</th>
+        <th class="col-event">原始事件</th>
+        <th class="col-expected">当时预期</th>
+        <th class="col-actual">实际发展</th>
+        <th class="col-deviation">偏离分析</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>09-09~11</td>
+        <td><strong>美联储9月加息概率飙至90%</strong>（PPI 5.4%/CPI 3.4%）</td>
+        <td>预期16日加息25bp落地，全球流动性收紧，A股/新兴市场承压</td>
+        <td>9月17日加息25bp落地（时隔3年多），并释放「年底前再加一次」信号。但9月18日美股股债齐涨、芯片指数涨超3%，A股三大指数收涨</td>
+        <td><span class="deviation-match">✔ 符合预期</span><br>加息幅度符合，但市场呈「利空出尽」式反弹，恐慌程度低于预期</td>
+      </tr>
+      <tr>
+        <td>09-08~12</td>
+        <td><strong>中东能源危机</strong>：沙特输油管道遇袭，布油重返100美元</td>
+        <td>预期油价或冲击120美元，霍尔木兹海峡封闭风险，催化全球滞胀</td>
+        <td>胡塞武装9月19日再袭利雅得及延布设施；延布港库存仅5-7天、全球面临4%缺口。但伊朗向美递出停战条件，油价冲高回落（9月18日原油黄金齐跌）</td>
+        <td><span class="deviation-over">⚠️ 部分超预期</span><br>冲突延续超预期，但油价涨幅不及最悲观情景（停战预期缓和）</td>
+      </tr>
+      <tr>
+        <td>09-07~10</td>
+        <td><strong>中美300亿降税磋商</strong> + 金砖会晤中印转暖</td>
+        <td>降税落地将实质缓解出口链/科技链关税压力，是中期关键积极变量</td>
+        <td>9月17日中美经贸团队就降税密切交流，王毅称「筹备下阶段高层交往」；中印无进一步重大动作</td>
+        <td><span class="deviation-match">✔ 符合预期</span><br>缓步推进，方向未变，但降税方案尚未最终落地</td>
+      </tr>
+      <tr>
+        <td>09-12</td>
+        <td><strong>英伟达拟投Anthropic IPO 100亿美元</strong>（估值2万亿）</td>
+        <td>AI资本开支持续高企，算力基础设施仍是核心受益主线</td>
+        <td>AI叙事出现急转弯：马斯克、Altman、Amodei三巨头罕见联手呼吁「放缓AI」，Altman称OpenAI今年不IPO；芯片指数9月15日暴跌近6%，9月18日又反弹涨超3%（黄仁勋称明年芯片销量翻倍）</td>
+        <td><span class="deviation-over">⚠️ 超预期</span><br>行业叙事从「狂飙」转向「放缓担忧」，板块剧烈双向波动</td>
+      </tr>
+      <tr>
+        <td>09-10~12</td>
+        <td><strong>苹果/华为折叠屏旗舰集中发布</strong></td>
+        <td>高端消费电子竞争格局重塑，产业链（铰链/光模块）走热</td>
+        <td>本周无重大后续催化，相关概念趋于平淡，热度被AI板块取代</td>
+        <td><span class="deviation-under">↓ 不及预期</span><br>事件性新闻已快速消化，未形成持续性主线</td>
+      </tr>
+      <tr>
+        <td>09-11</td>
+        <td><strong>A股「黑色星期五」</strong>，但ETF逆势净流入超百亿</td>
+        <td>内部政策托底与外部收紧博弈，A股进入震荡低吸周期</td>
+        <td>本周A股先跌后涨，9月18日三大指数集体收涨（沪指涨近1%、创业板涨超2%）；主力资金转向科技，电子行业净流入超百亿</td>
+        <td><span class="deviation-match">✔ 符合预期</span><br>震荡修复兑现，但主线从高位股切换至科技/半导体</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 1 过去7天回顾 ============ -->
+<div class="section">
+  <h2>📅 过去7天关键事件回顾（09-14 ~ 09-20）</h2>
+
+  <h3>一、全球货币政策：紧缩周期正式确立 🔥🔥🔥</h3>
+  <div class="event-card policy">
+    <div class="event-date">09-17 ｜ 华尔街见闻 / 财联社</div>
+    <div class="event-title">美联储时隔3年多重启加息25个基点</div>
+    <div class="event-detail">美联储在9月议息会议上加息25bp，为时隔3年多的首次加息，并释放「预计年底前还将加息一次」的鹰派信号。特朗普随后抨击该决定「相当令人遗憾」，敦促降息至1%以下；白宫公开表达不满。</div>
+    <div class="event-impact">⚠️ 影响：全球流动性拐点确认。消息公布当日美股、原油、黄金全线跳水，但次日（9月18日）股债齐涨，市场呈现「利空出尽」特征。</div>
+  </div>
+  <div class="event-card policy">
+    <div class="event-date">09-18 ｜ 华尔街见闻</div>
+    <div class="event-title">日本央行以1990年以来最快速度升息，日元跌破157</div>
+    <div class="event-detail">日本央行以7-2投票结果再次升息，为1990年以来最快升息节奏；日经225急涨，日元一度跌破157后来收窄跌幅。市场传闻日央行进行汇率摸底。</div>
+    <div class="event-impact">⚠️ 影响：美欧日三大央行同步加息，为「二十年一遇」，全球套息交易与资金流向面临重塑。</div>
+  </div>
+
+  <h3>二、中东地缘与能源 🔥🔥🔥</h3>
+  <div class="event-card geopolitics">
+    <div class="event-date">09-19 ｜ 央视 / 东方财富</div>
+    <div class="event-title">胡塞武装再袭沙特「敏感目标」与阿美延布设施，伊朗向美递停战条件</div>
+    <div class="event-detail">也门胡塞武装19日晚宣布袭击利雅得「敏感目标」及沙特阿美延布设施；延布港库存仅能维持5-7天出口，若沙特油管持续中断，全球或面临4%原油缺口。同日，伊朗通过卡塔尔向美方提交结束战争的条件，等待特朗普政府回应。</div>
+    <div class="event-impact">⚠️ 影响：能源供给风险是美联储加息叙事的核心推手；油运运费连日创新高（TD3C航线TCE达121万美元/天），航运与大宗商品进入高景气。伊朗停战条件成为下周关键变量。</div>
+  </div>
+  <div class="event-card geopolitics">
+    <div class="event-date">09-19 ｜ 商务部 / 央视</div>
+    <div class="event-title">美签署《2026格雷厄姆制裁俄伊法案》，中俄联手推翻美对伊制裁草案</div>
+    <div class="event-detail">美国将制裁俄罗斯和伊朗法案签署成法；美对进口俄石油天然气的第三国加征关税。中俄在联合国同时推翻美国对伊制裁草案；商务部就美制裁法案作出回应。</div>
+    <div class="event-impact">⚠️ 影响：美伊博弈与大国角力交织，制裁扩围加剧全球贸易与能源供应链不确定性。</div>
+  </div>
+
+  <h3>三、中美关系 🔥🔥</h3>
+  <div class="event-card policy">
+    <div class="event-date">09-17 ｜ 央视 / 商务部</div>
+    <div class="event-title">中美经贸团队就降税密切交流，王毅称筹备下阶段高层交往</div>
+    <div class="event-detail">中美经贸团队正就降税等议题密切交流；王毅表示要筹备好下阶段中美高层交往。中方就美对进口俄油气第三国加征关税作出回应。</div>
+    <div class="event-impact">⚠️ 影响：中美缓和通道延续，是中期缓解出口链与科技链压力的关键变量，但博弈与缓和并行。</div>
+  </div>
+
+  <h3>四、AI 与科技 🔥🔥</h3>
+  <div class="event-card tech">
+    <div class="event-date">09-14 ~ 09-19 ｜ 华尔街见闻 / 东方财富</div>
+    <div class="event-title">AI「放缓」之争白热化：三巨头联手呼吁，特朗普却要组建「AI部队」</div>
+    <div class="event-detail">马斯克、Altman、Dario Amodei罕见联手呼吁「全球放缓AI」，Amodei称「AI风险是真实的」；Altman称OpenAI今年不会IPO。特朗普19日反称「不会限制AI发展」，将组建「AI特别工作组/人工智能部队」并任命AI事务总管，称AI或占美国GDP的25%。黄仁勋驳斥「AI末日论」：「2030年世界末日的概率为0%」，并称英伟达明年芯片销量将翻倍。</div>
+    <div class="event-impact">⚠️ 影响：AI监管/发展路线之争成为全球焦点，直接引发芯片板块剧烈双向波动（9月15日芯片指数跌近6%，9月18日反弹涨超3%）。</div>
+  </div>
+  <div class="event-card tech">
+    <div class="event-date">09-17 ~ 09-20 ｜ 东方财富 / 央视</div>
+    <div class="event-title">国产产业加速：卫星互联网低轨25组发射、MLCC「电子工业大米」价格飙涨、医疗影像AI登上《Science》</div>
+    <div class="event-detail">我国成功发射卫星互联网低轨25组卫星；AI算力拉动MLCC高容量型号缺货疯涨、现货最高涨十倍；我国通用医疗影像AI（腹部增强CT单次识别146种病症）登上《Science》引热议；Anthropic加注AI制药、建设湿实验室。</div>
+    <div class="event-impact">⚠️ 影响：AI从「大模型叙事」向「算力硬件+垂直落地（医疗/制药）」深化，硬科技景气延续。</div>
+  </div>
+
+  <h3>五、国内经济与政策 🔥🔥</h3>
+  <div class="event-card policy">
+    <div class="event-date">09-15 ~ 09-18 ｜ 统计局 / 新华社</div>
+    <div class="event-title">8月国民经济运行平稳，人民币升破6.7关口</div>
+    <div class="event-detail">8月国民经济运行平稳，出口保持韧性（绿色贸易进出口规模居全球首位）。人民币汇率实现「重要突破」，升破6.7关口，业内预计全年走势「先升后稳」。</div>
+    <div class="event-impact">⚠️ 影响：人民币走强反映资金流入与经济韧性，但也加大出口价格压力，需关注央行对汇率节奏的引导。</div>
+  </div>
+  <div class="event-card policy">
+    <div class="event-date">09-18 ｜ 住建部</div>
+    <div class="event-title">住建部宣告「房地产进入存量时代」，现房销售成大势所趋</div>
+    <div class="event-detail">住建部明确「我国房地产进入存量时代」「现房销售是大势所趋」，释放「十五五」新信号。统计局称房地产市场出现重要变化。多地放宽公积金提取范围、提高最高可贷额度，公积金扩围撬动万亿消费。</div>
+    <div class="event-impact">⚠️ 影响：地产政策重心从「增量扩张」转向「存量优化与现房销售」，电梯等产业链（4楼及以上加装电梯）迎增量利好。</div>
+  </div>
+  <div class="event-card society">
+    <div class="event-date">09-14 ~ 09-17 ｜ 卫健委 / 医保局</div>
+    <div class="event-title">民生政策密集：促生育体系、智能家居方案、灵活就业社保、中医暂不入医保目录</div>
+    <div class="event-detail">卫健委加快完善生育支持政策体系；8部门印发《促进智能家居消费行动方案》；我国灵活就业人员超2亿、社保不足引关注；国家医保局明确中医暂不纳入首批医保医疗服务目录。</div>
+    <div class="event-impact">⚠️ 影响：扩内需与民生保障并进，生育、智能家居、灵活就业社保是政策与消费增量重点。</div>
+  </div>
+
+  <h3>六、金融市场 🔥🔥</h3>
+  <div class="event-card market">
+    <div class="event-date">09-14 ~ 09-18 ｜ 东方财富 / 财联社</div>
+    <div class="event-title">A股先跌后涨，主力资金重回科技；宁德时代4个月市值蒸发超7000亿</div>
+    <div class="event-detail">本周A股先抑后扬，9月18日三大指数集体收涨（沪指涨近1%、创业板涨超2%）。主力资金明显转向科技：电子行业净流入超百亿，通信、机械设备亦受关注。宁德时代因电池税落地、车企加速自研电池（何小鹏称「小鹏电池自己干」），周跌8.64%、主力净流出63.77亿，4个月市值蒸发超7000亿。</div>
+    <div class="event-impact">⚠️ 影响：市场风格从「高位题材」切换至「科技/半导体」，电池产业链估值承压但油轮、电梯等板块获催化。</div>
+  </div>
+</div>
+
+<!-- ============ 2 未来7天预览 ============ -->
+<div class="section">
+  <h2>🗓️ 未来7天重点事件预览（09-21 ~ 09-27）</h2>
+  <table>
+    <thead>
+      <tr><th>时间</th><th>事件</th><th>影响领域</th><th>情景分析</th><th>关注度</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>09-20（周一）</td>
+        <td><strong>9月LPR报价</strong></td>
+        <td>货币政策 / 地产</td>
+        <td>超预期：跟随外部收紧反而加息→债市承压；符合预期：维持不变（大概率）；不及预期：意外降息→利好地产银行</td>
+        <td>🔥🔥</td>
+      </tr>
+      <tr>
+        <td>09-21 起</td>
+        <td><strong>美联储官员密集发声</strong>（利率路径指引）</td>
+        <td>全球流动性 / 美元</td>
+        <td>超预期：鹰派表态强化「年底再加息」→美元走强、风险资产承压；符合预期：中性表态、市场震荡；不及预期：转鸽→利好新兴市场与A股</td>
+        <td>🔥🔥🔥</td>
+      </tr>
+      <tr>
+        <td>09-21 起</td>
+        <td><strong>伊朗停战条件 / 特朗普政府回应</strong></td>
+        <td>地缘 / 能源</td>
+        <td>超预期：美伊达成停战→油价急跌、避险回落；符合预期：持续拉锯→油价高位震荡；不及预期：谈判破裂→油价重上100美元、全球滞胀风险上升</td>
+        <td>🔥🔥🔥</td>
+      </tr>
+      <tr>
+        <td>09-21 起</td>
+        <td><strong>中日韩/美欧日央行紧缩连锁反应</strong>（日元、债市套息）</td>
+        <td>外汇 / 债券</td>
+        <td>超预期：日本干预汇市→日元急升、套息平仓冲击全球；符合预期：日元弱势延续；不及预期：日本再度宽松→风险偏好改善</td>
+        <td>🔥🔥</td>
+      </tr>
+      <tr>
+        <td>09-22 ~ 24</td>
+        <td><strong>A股Q3季末资金面 + 科技/半导体行情延续性</strong></td>
+        <td>A股 / 科技</td>
+        <td>超预期：科技主线延续、成交放量→沪指冲击前高；符合预期：缩量震荡、题材轮动；不及预期：季末资金流出、科技回调</td>
+        <td>🔥🔥</td>
+      </tr>
+      <tr>
+        <td>09-25（周五）</td>
+        <td><strong>美国8月PCE物价指数</strong></td>
+        <td>通胀 / 美联储路径</td>
+        <td>超预期：PCE超预期→强化再加息；符合预期：温和→中性；不及预期：PCE降温→缓和紧缩担忧</td>
+        <td>🔥🔥</td>
+      </tr>
+      <tr>
+        <td>持续</td>
+        <td><strong>国庆消费旺季临近</strong>（国风文创/文旅预热）</td>
+        <td>消费 / 社会</td>
+        <td>超预期：消费数据超预期→利好消费板块；符合预期：平稳回暖；不及预期：消费疲软→政策加码预期升温</td>
+        <td>🔥</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 3 未来6个月日历 ============ -->
+<div class="section">
+  <h2>🔮 未来6个月事件日历（2026-10 ~ 2027-03）</h2>
+
+  <div class="month-section">
+    <div class="month-title">📌 2026年10月</div>
+    <div class="cal-item"><span class="cal-date">10月上旬</span> — 国庆黄金周消费数据；CPI/PPI（9-12日）</div>
+    <div class="cal-item"><span class="cal-date">10月中</span> — 三季度GDP、社融/信贷（10-15日）、工业增加值/社零（中旬）</div>
+    <div class="cal-item"><span class="cal-date">10月20日</span> — LPR报价</div>
+    <div class="cal-item"><span class="cal-date">10月27-28日</span> — 美联储FOMC议息会议</div>
+    <div class="cal-item"><span class="cal-date">10月底</span> — A股三季报披露截止（10月31日）；中央政治局会议（经济）</div>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title">📌 2026年11月</div>
+    <div class="cal-item"><span class="cal-date">11月3日</span> — <strong>美国中期选举</strong>（市场重大变量）</div>
+    <div class="cal-item"><span class="cal-date">11月11日</span> — 双11电商消费季</div>
+    <div class="cal-item"><span class="cal-date">11月中</span> — 社融/信贷、经济数据</div>
+    <div class="cal-item"><span class="cal-date">11月20日</span> — LPR报价；美科技股财报季（10-11月）</div>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title">📌 2026年12月</div>
+    <div class="cal-item"><span class="cal-date">12月8-9日</span> — 美联储FOMC议息会议（年底加息关键窗口）</div>
+    <div class="cal-item"><span class="cal-date">12月上旬</span> — <strong>中央经济工作会议</strong>（定调2027年）</div>
+    <div class="cal-item"><span class="cal-date">12月中</span> — 年度经济数据、政治局会议</div>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title">📌 2027年1月</div>
+    <div class="cal-item"><span class="cal-date">1月上旬</span> — CES消费电子展（美国拉斯维加斯）</div>
+    <div class="cal-item"><span class="cal-date">1月中</span> — 2026全年GDP、四季度经济数据</div>
+    <div class="cal-item"><span class="cal-date">1月20日</span> — LPR报价</div>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title">📌 2027年2月</div>
+    <div class="cal-item"><span class="cal-date">2月</span> — 春节消费数据；MWC世界移动通信大会（巴塞罗那）</div>
+    <div class="cal-item"><span class="cal-date">2月20日</span> — LPR报价</div>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title">📌 2027年3月</div>
+    <div class="cal-item"><span class="cal-date">3月上旬</span> — <strong>全国两会</strong>（政府工作报告、GDP目标设定）</div>
+    <div class="cal-item"><span class="cal-date">3月中</span> — 前两月经济数据、CPI/PPI</div>
+  </div>
+</div>
+
+<!-- ============ 4 综合研判 ============ -->
+<div class="section">
+  <h2>💡 综合研判</h2>
+  <h3>🔗 跨事件主线：全球「紧缩周期」确立，但市场韧性高于预期</h3>
+  <p style="color:#ccc;font-size:0.95em;">
+    本周的核心主线是<b>全球货币政策由「宽松」转向「紧缩」的正式落地</b>——美联储加息25bp、日本央行史上最快升息、欧央行持续收紧。然而市场的实际反应（9月18日股债齐涨）显示，本轮紧缩带来的恐慌程度低于预期，「利空出尽」特征明显。真正的风险主线已从「加息本身」转向<b>「中东能源与通胀」</b>：如果伊朗停战谈判破裂、霍尔木兹海峡扰动，油价重上100美元，将重新强化加息预期并催化全球滞胀。
+  </p>
+  <h3>⚠️ 关键风险点（按严重度排序）</h3>
+  <p>
+    <span class="risk-high">🔴 高风险：中东局势失控 / 霍尔木兹海峡扰动</span> —— 胡塞武装续袭沙特、伊朗停战条件悬而未决。若油价冲击120美元，全球滞胀压力骤升，加息预期形成负反馈。<br>
+    <span class="risk-high">🔴 高风险：美联储「年底再加息」超预期</span> —— 若鹰派信号强化，美元走强、新兴市场资金外流，A股与亚太承压。<br>
+    <span class="risk-mid">🟡 中风险：AI「放缓」叙事引发科技板块估值波动</span> —— 三巨头呼吁放缓 vs 特朗普组建AI部队，监管不确定性加大，芯片板块双向波动加剧。<br>
+    <span class="risk-mid">🟡 中风险：大国博弈（中美降税、美伊制裁、中俄联动）</span> —— 博弈与缓和并行，关税与制裁扰动供应链。
+  </p>
+  <h3>🎯 配置与关注方向</h3>
+  <p style="color:#ccc;font-size:0.95em;">
+    <b>科技/算力硬件</b>：AI主线从「大模型叙事」转向「算力硬件+垂直落地」，光模块、液冷、存储、MLCC、医疗/制药AI景气延续，关注英伟达明年销量翻倍信号。<br>
+    <b>能源与航运</b>：中东供给风险推升油运（TD3C租金创新高）、大宗商品，实物资产仍具抗通胀属性。<br>
+    <b>人民币升值受益链</b>：人民币升破6.7，外资流入利好金融与核心资产，但需警惕出口竞争力压力。<br>
+    <b>地产存量/现房销售</b>：住建部「存量时代」定调下，关注物业运营、电梯加装、城市更新等存量链条。<br>
+    <b>政策受益链</b>：生育支持、智能家居、灵活就业社保、促消费（智能家居方案、公积金扩围）。
+  </p>
+</div>
+
+<div class="footer">
+  <p>由 Hermes Agent 自动生成 ｜ 数据来源：TrendRadar MCP + 东方财富快讯 ｜ 部署于 GitHub Pages</p>
+  <p>⚠️ 免责声明：本报告基于公开信息整理，不构成任何投资建议。</p>
+</div>
+</body>
+</html>
